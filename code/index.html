@@ -12,21 +12,42 @@
             padding: 0px;
             box-sizing: border-box;
         }
-        
-        body {
-            height: 100vh;
+        /* div {
+            height: 200px;
+            width: 200px;
             background-color: black;
-        }
-        
-        div {
-            height: 80%;
+            /* position:relative moves the element relative to itself */
+            /* absolute moves the element relative to its parent i.e. body */
+            /*position: absolute;
+            bottom: 0;
+            right: 0; 
+        }*/
+        div.parent{
+            height: 300px;
+            width: 300px;
             background-color: orange;
+            position: absolute;
+            bottom: 50px;
+        }
+        div.child{
+            height: 50px;
+            width: 50px;
+            background-color: purple;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
     </style>
 </head>
 
 <body>
-    <div></div>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
 </body>
 
 </html>
+
+
+<!-- An Element can be styled absolute only if its immediate parent is positioned relative or absolute. Body by default has position relative -->
