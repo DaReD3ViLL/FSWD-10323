@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    animation-name: play;
+    animation-duration: 1s;
+    /* animation-fill-mode forwards makes the animation stay at final state; default is reverse which makes the animation revert to original state */
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; /* how many times to iterate*/
+    animation-direction: alternate; /*default-normal, reverse-reverses the animation, alternate- betwn the 2 */
+    animation-timing-function: ease-out;
+}
+
+@keyframes play {
+    from {
+        transform: scale(1);  
+    }
+    to {
+        transform: scale(2);
+        border-radius: 20px;
+    }
+}
