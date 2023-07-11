@@ -1,38 +1,22 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.warning{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: none;
 }
-
-div{
-    height: 200px;
-    width: 200px;
-    background-color: orange;
-    transition-duration: 1s;
-    /* transition-property: height; */
-    /* transition-property: background-color; */
-    /* transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); */
-    transition-timing-function: ease;
-    /* TRANSITION DELAY applies DURATION property after a delay */
-    /* transition-delay: 0.5s; */
-    /* SHORTHAND- transition: (timing-func duration to-what delay */
-}
-div:hover{
-    height: 400px;
-    width: 400px;
-    cursor: pointer;
-    background-color: red;
-    /* TRANSFORM properrty can be used to transorm an element */
-    /* SCALE property scales the element by x number of times */
-    /* transform: scale(2); */
-    /* scalex stretches the element out in x-axis */
-    /* transform: scalex(2); */
-    /* ROTATE property rotates the element by x degrees */
-    transform: rotate(180deg);
-    /* SKEW squeezes the element into an odd shape */
-    /* transform: skew(180deg); */
-    /* TRANSLATE moves the element by x pixels */
-    /* transform: translate(100px, 100px); */
-    /* transform: rotate(180deg) translate(110px, 110px); */
+@media(max-width: 450px) {
+    div.warning {
+        display: flex;
+    }
 }
