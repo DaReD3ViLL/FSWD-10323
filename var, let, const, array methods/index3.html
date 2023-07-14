@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some more array methods</title>
+</head>
+<body>
+    <script>
+        const a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        // forEach() - 
+        // function iterate(currentValue,currentIndex) {
+        //     console.log(currentValue,currentIndex)
+        // }
+        // a.forEach(iterate)
+
+        // map() - 
+        // function iterate(currentValue,currentIndex) {
+        //     console.log(currentValue,currentIndex)
+        // }
+        // a.map(iterate)
+        // returns same output as forEach
+
+        // Difference:
+        function iterate(currentValue,currentIndex) {
+             return currentValue
+            }
+        // const newArr = a.forEach(iterate)
+        const newArr = a.map(iterate)
+        console.log(newArr)
+        // In Coclusion, map() can be used if we have something to return, else forEach()
+    </script>
+</body>
+</html>

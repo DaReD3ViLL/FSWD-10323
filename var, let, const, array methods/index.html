@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var, let, const</title>
+</head>
+<!-- const and let have local scope, var has global scope irrespective of where it is declared, if variable is accessed before initializing, const and let throw error whereas var gives 'undefined' -->
+<body>
+    <script>
+        // 1.
+        // if(true) {
+        //     var x = 10
+        // }
+
+        // 2.
+        // console.log(x)
+        // var x = 10
+
+        // 3.
+        // var x = 10
+        // if(true) {
+        //     var x = 20
+        //     console.log(x)
+        // }
+        // console.log(x)
+
+        // 4.
+        // let a = 10
+        // let b = a
+        // b = 20
+        // console.log(b)
+
+        // 5.
+        // let a = [1, 2, 3, 4, 5]
+        // let b = a
+        // console.log(b)
+
+        // 6. Array Methods
+        const a = [1, 2, 3, 4, 5]
+        // push() adds an element to the array at the end
+        a.push(34)
+        console.log('push: ' + a)
+        // pop() removes an element from an array from the end
+        a.pop()
+        console.log('pop: ' + a)
+        // unshift() adds an element to an array at the beginning
+        a.unshift(34)
+        console.log('unshift: ' + a)
+        // shift() removes an element from beginning of an array
+        const b = a.shift()
+        console.log('shift: ' + a)
+        console.log(b)
+        // pop(), shift() return the element that was removed;
+        // push(), unshift() return the length of an array
+    </script>
+</body>
+</html>
