@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggling Theme using JS</title>
+    <script defer src="./script1.js"></script>
+    <style>
+        body {
+            transition: 1s ease;
+        }
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        body.light {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body class="">
+    <h1>DOM in JavaScript</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="toggleTheme()">Theme</button>
+</body>
+</html>
